@@ -1,41 +1,87 @@
-1) Membuat direktori baru dengan nama UAP-Adsis dengan menggunakan perintah
-“mkdir”
+Langkah 1) Lakukan koneksi ke MongoDB menggunakan connection string
 <img src="1.jpg">
 
-2) Setelah itu, masuk ke dalam folder tersebut, dan buat file dengan nama catatanya-
-ahmad.txt menggunakan perintah “touch”
+Langkah 2) Buat database dengan melakukan klik “Create Database”
+<img src="2.jpg">
+
+Langkah 3&4) Lakukan insert buku pertama dan kedua dengan melakukan klik “Add Data”, pilih “Insert
+Document”,
+isi dengan data yang diinginkan dan klik “Insert”
+<img src="3.jpg">
+<img src="4.jpg">
+<img src="5.jpg">
+<img src="6.jpg">
+
+Langkah 5) Lakukan Pencarian Buku dengan Author“Osamu Dazai”dengan mengisi filter
+yang diinginkan dan klik“find”
+<img src="7.jpg">
+
+Langkah 6) Lakukan perubahan summary pada buku “No Longer Human” menjadi “Buku
+yang bagus (<NAMA>,<NIM>) dengan melakukan klik “Edit Document”
+(berlambang pensil), mengisi nilai summary yang baru, dan melakukan klik
+“Update”
+<img src="8.jpg">
+
+Langkah 7) Lakukan penghapusan pada buku “I Am a Cat” dengan melakukan klik
+“Remove Document” (berlambang tong sampah) dan melakukan klik “Delete”
+<img src="9.jpg">
+<img src="10.jpg">
+
+
+MongoDB SHELL
+Langkah 1) Lakukan koneksi ke MongoDB server dengan menjalankan command mongosh bagi yang
+menggunakan terminal build in OS sehingga tampilan terminal kalian menjadi seperti
+berikut.
+<img src="11.jpg">
+
+Langkah 2) Mencoba melihat list database yang ada di server dengan menjalankan command show
+dbs
+Untuk berpindah ke database “bookstore” gunakan command use bookstore , kalian
+dapatmemastikan telah berpindah ke database yang benar dengan melihat tulisan sebelum
+tanda “>”
+<img src="12.jpg">
+
+Langkah 3) Lakukan insert buku “Overlord I” dengan menggunakan command
+db.books.insertOne(<data kalian>) , setelah insert buku berhasil maka MongoDB akan
+mengembalikan pesan sebagai berikut.
+<img src="13.jpg">
+
+Langkah 4) Lakukan insert buku “The Setting Sun” dan “Hujan” dengan insert many dengan
+menggunakan command db.books.insertMany(<data kalian>) , dan akan mengembalikan
+pesan seperti pada modul
+<img src="14.jpg">
+
+Langkah 5) Lakukan pencarian buku dengan menggunakan command db.books.find() untuk
+melakukan pencarian semua buku.
+<img src="15.jpg">
+
+Langkah 6) Tampilkan seluruh buku dengan author “Osamu Dazai” dengan mengisi argument pada
+find() dengan menggunakan command db.books.find({<filter yang ingin diisi>})
+<img src="16.jpg">
+
+Langkah 7) Lakukan perubahan summary pada buku “Hujan” menjadi “Buku yang bagus
+(<NAMA>,<NIM>) dengan mengunakan command db.books.updateOne({<filter>},
+{$set: {<data yang akan di update>}}) sehingga output yang dihasilkan oleh MongoDB
+akan menjadi seperti pada modul
+<img src="17.jpg">
+
+Langkah 8) Lakukan perubahan publisher menjadi “Yen Press” pada semua buku “Osamu Dazai”
+dengan menggunakan command db.books.updateMany({<filter>}, {$set: {<data yang
+akan di update>}})
+<img src="18.jpg">
+
+Langkah 9) Buat database dengan melakukan klik “Create Database”
 <img src="Screenshots/Soal 1/2.jpg">
 
-3) Mengisikan file yang telah dibuat dengan nama dan nim
-<img src="Screenshots/Soal 1/3.jpg">
+Langkah 10) Buat database dengan melakukan klik “Create Database”
+<img src="Screenshots/Soal 1/2.jpg">
 
-4) Lalu, memberikan permission view-only pada file yang telah dibuat menggunakan
-perintah “chmod” menggunakan kode 644. Kode tersebut memiliki arti bahwa pemilik
-akan memiliki akses untuk baca dan tulis, namun untuk user biasa hanya dapat
-membacanya saja.
-<img src="Screenshots/Soal 1/4.jpg">
 
-5) Menggunakan perintah “ls -l” untuk menampilkan hasil file yang telah diberikan
-permission only.
-<img src="Screenshots/Soal 1/5.jpg">
-Dapat dilihat bahwa file tersebut memiliki kode rw-r—r dimana kode tersebut
-memiliki arti file hanya dapat baca dan diubah oleh pemiliki, dan user biasa hanya
-dapat membaca saja
 
-Soal 2
-------------------------------------------------
 
-1) Periksa antarmuka jaringan yang tersedia.
-<img src="Screenshots/Soal 2/6.jpg">
 
-2) konfigurasi alamat IP dan default gateway sementara
-<img src="Screenshots/Soal 2/7.jpg">
 
-3) memeriksa apakah konfigurasi alamat IP sementara dan default gateway berhasil dilakukan 
-<img src="Screenshots/Soal 2/8.jpg">
 
-Soal 3
-------------------------------------------------
 
 
 1) Membuat user baru dengan cara masuk ke halaman user and groups. Pada halaman
