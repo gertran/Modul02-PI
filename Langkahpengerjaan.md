@@ -1,3 +1,5 @@
+MongoDB Compass
+------------------------------------------------
 Langkah 1) Lakukan koneksi ke MongoDB menggunakan connection string
 <img src="1.jpg">
 
@@ -29,6 +31,7 @@ Langkah 7) Lakukan penghapusan pada buku “I Am a Cat” dengan melakukan klik
 
 
 MongoDB SHELL
+------------------------------------------------
 Langkah 1) Lakukan koneksi ke MongoDB server dengan menjalankan command mongosh bagi yang
 menggunakan terminal build in OS sehingga tampilan terminal kalian menjadi seperti
 berikut.
@@ -70,46 +73,10 @@ dengan menggunakan command db.books.updateMany({<filter>}, {$set: {<data yang
 akan di update>}})
 <img src="18.jpg">
 
-Langkah 9) Buat database dengan melakukan klik “Create Database”
-<img src="Screenshots/Soal 1/2.jpg">
+Langkah 9) Lakukan penghapusan pada buku “Overlord I” dengan menggunakan command
+db.books.deleteOne({<argument>})
+<img src="19.jpg">
 
-Langkah 10) Buat database dengan melakukan klik “Create Database”
-<img src="Screenshots/Soal 1/2.jpg">
-
-
-
-
-
-
-
-
-
-1) Membuat user baru dengan cara masuk ke halaman user and groups. Pada halaman
-ini, kita akan membuat user baru dengan cara menekan tombol “create new user” untuk
-membuat user baru, dan memasukkan nama user
-<img src="Screenshots/Soal 3/10.jpg">
-<img src="Screenshots/Soal 3/9.jpg">
-Dapat terlihat bahwa user “ahmads” sudah berhasil dibuat.
-
-2) Selanjutnya, membuat grup baru dengan nama “gertran” dengan cara menekan tombol
-“create a new group”. Pada saat membuat grup, lakukan penambahan user yang
-sebelumnya telah dibuat
-<img src="Screenshots/Soal 3/12.jpg">
-
-Soal 4
-------------------------------------------------
-
-1) Melakukan ping pada alamat IP 192.168.180.128
-<img src="Screenshots/Soal 4/13.jpg">
-
-2) Membuat rule baru untuk melakukan reject kepada request paket bertipe ICMP
-<img src="Screenshots/Soal 4/14.jpg">
-
-
-Soal 5
-------------------------------------------------
-
-1) Menjalankan perintah sudo crontab -e dan menuliskan perintah berikut untuk melakukan otomatisasi ping ke filkom.ub.ac.id
-
-2) Setelah itu, dapat dilihat bahwa perintah ping telah terotomatisasi setiap 3 menit
-<img src="Screenshots/Soal 5/15.jpg">
+Langkah 10) Lakukan penghapusan pada semua buku “Osamu Dazai dengan menggunakan
+command db.books.deleteMany({<argument>})
+<img src="20.jpg">
